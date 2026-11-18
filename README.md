@@ -8,7 +8,7 @@ INN Hotels Group, una cadena de hoteles en Portugal, enfrenta un alto número de
 
 ## Datos
 
-Archivo: [`data/INNHotelsGroup.csv`](data/INNHotelsGroup.csv). **36.275 reservas** y **19 columnas**, sin valores nulos.
+Archivo: [`INNHotelsGroup.csv`](INNHotelsGroup.csv). **36.275 reservas** y **19 columnas**, sin valores nulos.
 
 La variable objetivo es `booking_status`: **32,76 %** canceladas y 67,24 % no canceladas. La clase positiva es cancelar (`Canceled = 1`).
 
@@ -68,10 +68,9 @@ Python, pandas, NumPy, scikit-learn (`DecisionTreeClassifier`, `GridSearchCV`, m
 .
 ├── README.md
 ├── requirements.txt
-├── data/
-│   └── INNHotelsGroup.csv
-└── notebooks/
-    └── Project_SLC_DSBA_INNHotels_FullCode.ipynb
+├── .gitignore
+├── INNHotelsGroup.csv
+└── Project_SLC_DSBA_INNHotels_FullCode.ipynb
 ```
 
 ## Cómo ejecutarlo
@@ -82,7 +81,7 @@ source .venv/bin/activate   # en Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Abre `notebooks/Project_SLC_DSBA_INNHotels_FullCode.ipynb` en Jupyter, VS Code o Google Colab. El notebook ya incluye las salidas ejecutadas (tablas y gráficas), así que se puede revisar el análisis sin volver a correrlo.
+Abre `Project_SLC_DSBA_INNHotels_FullCode.ipynb` en Jupyter, VS Code o Google Colab. El notebook ya incluye las salidas ejecutadas (tablas y gráficas), así que se puede revisar el análisis sin volver a correrlo.
 
 **Ruta de los datos.** El notebook se escribió en Google Colab y lee el CSV con una ruta fija de Drive; no la modifiqué, para no alterar el código entregado:
 
@@ -93,10 +92,10 @@ data = pd.read_csv('/content/drive/MyDrive/GREAT LEARNING/4. SUPERVISED LEARNING
 Para ejecutarlo en local, cambia esa llamada a:
 
 ```python
-data = pd.read_csv('../data/INNHotelsGroup.csv')
+data = pd.read_csv('./INNHotelsGroup.csv')
 ```
 
-Si lo corres en Colab, sube `data/INNHotelsGroup.csv` y actualiza la ruta, o coloca el archivo en la ruta original de Drive después de montar el disco.
+Si lo corres en Colab, sube `INNHotelsGroup.csv` y actualiza la ruta, o coloca el archivo en la ruta original de Drive después de montar el disco.
 
 ## Crédito
 
@@ -114,7 +113,7 @@ INN Hotels Group, a hotel chain in Portugal, faces a high number of cancellation
 
 ## Data
 
-File: [`data/INNHotelsGroup.csv`](data/INNHotelsGroup.csv). **36,275 bookings** and **19 columns**, with no missing values.
+File: [`INNHotelsGroup.csv`](INNHotelsGroup.csv). **36,275 bookings** and **19 columns**, with no missing values.
 
 The target is `booking_status`: **32.76%** canceled and 67.24% not canceled. The positive class is a cancellation (`Canceled = 1`).
 
@@ -174,10 +173,9 @@ Python, pandas, NumPy, scikit-learn (`DecisionTreeClassifier`, `GridSearchCV`, c
 .
 ├── README.md
 ├── requirements.txt
-├── data/
-│   └── INNHotelsGroup.csv
-└── notebooks/
-    └── Project_SLC_DSBA_INNHotels_FullCode.ipynb
+├── .gitignore
+├── INNHotelsGroup.csv
+└── Project_SLC_DSBA_INNHotels_FullCode.ipynb
 ```
 
 ## How to run
@@ -188,7 +186,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Open `notebooks/Project_SLC_DSBA_INNHotels_FullCode.ipynb` in Jupyter, VS Code, or Google Colab. The notebook already contains executed outputs (tables and plots), so the analysis can be reviewed without re-running it.
+Open `Project_SLC_DSBA_INNHotels_FullCode.ipynb` in Jupyter, VS Code, or Google Colab. The notebook already contains executed outputs (tables and plots), so the analysis can be reviewed without re-running it.
 
 **Data path.** The notebook was written in Google Colab and reads the CSV from a hardcoded Google Drive path; I left that path unchanged so the delivered code stays intact:
 
@@ -199,10 +197,10 @@ data = pd.read_csv('/content/drive/MyDrive/GREAT LEARNING/4. SUPERVISED LEARNING
 To run it locally, change that call to:
 
 ```python
-data = pd.read_csv('../data/INNHotelsGroup.csv')
+data = pd.read_csv('./INNHotelsGroup.csv')
 ```
 
-If you run it in Colab, upload `data/INNHotelsGroup.csv` and update the path, or place the file at the original Drive path after mounting Drive.
+If you run it in Colab, upload `INNHotelsGroup.csv` and update the path, or place the file at the original Drive path after mounting Drive.
 
 ## Credit
 
